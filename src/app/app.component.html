@@ -1,0 +1,65 @@
+<!-- <div
+  class="bg-image"
+  style="background-image: url('https://t4.ftcdn.net/jpg/05/32/28/59/360_F_532285934_qyYCy5BpdBGaM1DpL1SvlcvftOMuppCC.jpg'); height: 100vh"
+> -->
+<body>
+  <!-- <div class="container-fluid"> -->
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+    <div class="d-flex justify-content-center align-items-center h-100"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand text-danger" href="#">Employee Management System</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="active__link"
+              aria-current="page"
+              routerLink="addemployee"
+              >Add Employee</a
+            >
+          </li>
+          <li class="nav-item vertical-spacer">
+            <a class="nav-link" routerLink="allemployees"
+              >Employee List</a
+            >
+          </li>
+          `
+          <li class="nav-item">
+            <a class="nav-link" routerLink="addcompany">Add Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="allcompanies">Companies List</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Background image -->
+  <div
+    class="bg-image"
+    style="background-image: url('https://t4.ftcdn.net/jpg/05/32/28/59/360_F_532285934_qyYCy5BpdBGaM1DpL1SvlcvftOMuppCC.jpg'); height: 100vh"
+  >
+    <div class="mask" style="background-color: #666041b2">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <h1 class="text-white mb-0">Employee and Companies Details</h1>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- </div> -->
+</body>

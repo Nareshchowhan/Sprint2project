@@ -1,0 +1,34 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Employee List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-hover text-bold">
+        <thead class="table-light">
+          <tr>
+            <th class="text-center">Employee Id</th>
+            <th class="text-center">Employee Name</th>
+            <th class="text-cente">Employee Age</th>
+            <th class="text-center">EmailId</th>
+            <th class="text-center">MobileNo</th>
+            <th class="text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees" class="text-bold">
+            <td class="text-center">{{employee.id}}</td>
+            <td class="text-center">{{employee.name}}</td>
+            <td class="text-center">{{employee.age}}</td>
+            <td class="text-center">{{employee.emailId}}</td>
+            <td class="text-center">{{employee.mobileNo}}</td>
+            <td class="text-center">
+              <button class="btn btn-info"style="margin-left: 10px;"(click)="employeeDetails(employee.id)">View</button> 
+              <button (click)="updateEmployee(employee.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+

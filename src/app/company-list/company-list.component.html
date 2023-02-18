@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Companies List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th class="text-center">Company Id</th>
+            <th class="text-center">Company Name</th>
+            <th class="text-center">Company Location</th>
+            <th class="text-center">Location Pincode</th>
+            <th class="text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let company of companies" class="text-bold">
+            <td class="text-center">{{company.id}}</td>
+            <td class="text-center">{{company.name}}</td>
+            <td class="text-center">{{company.location}}</td>
+            <td class="text-center">{{company.pincode}}</td>
+            <td class="text-center">
+              <button class="btn btn-info"style="margin-left: 10px;"(click)="companyDetails(company.id)">View</button> 
+              <button (click)="updateCompany(company.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="deleteCompany(company.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

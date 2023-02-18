@@ -1,0 +1,18 @@
+.vertical-spacer
+{
+    border-right: 2px solid lightgray;
+}
+.nav-item a
+{
+    color: #81a69b !important;
+    font-weight: 500;
+}
+/* .nav-link active a */
+#active__link
+{
+    color: #41665b !important;
+}
+.nav-item a:hover
+{
+    color: #41665b !important;
+}

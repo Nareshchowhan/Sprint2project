@@ -1,0 +1,27 @@
+<h3 class="text-center mt-10 text-success mb-30 p-30">
+  Company details of id:{{company.id}} are
+</h3> 
+
+<div class="text-center text-bold p-20">
+<div *ngIf="company">
+  <div>
+    <label><b>Name: </b></label> {{company.name}}
+  </div>
+  <div>
+    <label><b>Location: </b></label> {{company.location}}
+  </div>
+  <div>
+    <label><b>Pincode:</b></label> {{company.pincode}}
+  </div>  
+</div>
+</div>
+
+<div class="text-center m-20">
+<button (click)="list()" class="btn btn-info text-light m-30">Back to Company List</button>
+</div>
+
+
+
+
+
+
